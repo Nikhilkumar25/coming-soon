@@ -1507,9 +1507,12 @@
 
 		 <!--              FORM  -->
 <!-- 	           <form action="https://nicepage.com/editor/Forms/Process" method="POST" class="u-block-6c55-11 u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" source="email"> -->
-                     <form name="Early Access" class="u-block-6c55-11 u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" method="POST" data-netlify="true">
-			  <input type="hidden" id="siteId" name="siteId" value="22489">
-                      <input type="hidden" id="pageId" name="pageId" value="22491">
+                     <form name="Early Access" class="u-block-6c55-11 u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" method="POST"  netlify-honeypot="bot-field"  data-netlify="true">
+<!-- 			  <input type="hidden" id="siteId" name="siteId" value="22489">
+                      <input type="hidden" id="pageId" name="pageId" value="22491"> -->
+			      <p class="hidden">
+    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+  </p>
                       <div class="u-form-group u-form-name">
                         <label for="name-e2ba" class="u-form-control-hidden u-label">Name</label>
                         <input type="text" placeholder="Name" id="name-e2ba" name="name" class="u-border-3 u-border-palette-2-base u-input" required="">
@@ -1522,6 +1525,7 @@
                         <label for="message-e2ba" class="u-form-control-hidden u-label">Message</label>
                         <textarea placeholder="Message (What you want to teach/learn)" rows="4" cols="50" id="message-e2ba" name="message" class="u-border-3 u-border-palette-2-base u-input" required="" spellcheck="false"></textarea>
                       </div>
+			  <div data-netlify-recaptcha="true"></div>
                       <div class="u-form-group u-form-submit">
                         <a  class="u-btn u-btn-submit u-button-style u-palette-2-base u-btn-1">Submit</a>
                         <input type="submit" class="u-border-palette-2-base u-form-control-hidden" >
@@ -1530,7 +1534,8 @@
                       <div class="u-form-send-message u-form-send-success u-green-400">Thank you! Your message has been sent.</div>
 			     <div class="u-form-send-error u-form-send-message u-green-400">Thank you! Your message has been sent.</div>
 <!--                       <div class="u-form-send-error u-form-send-message u-red-400">Unable to send your message. Please fix errors then try again.</div> -->
-                      <input type="hidden" value="" name="recaptchaResponse">
+<!--                       <input type="hidden" value="" name="recaptchaResponse"> -->
+			     <input type="hidden" name="Early Access" value="contact">
                     </form>
                   </div>
                 </div>
